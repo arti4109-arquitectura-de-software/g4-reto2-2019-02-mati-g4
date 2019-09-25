@@ -1,0 +1,19 @@
+
+<table>
+  <tr >
+    <th>terminal</th>
+    <th>date</th>
+    <th>description</th>
+    <th>Nro</th>
+    <th>Sale</th>
+    <th>$</th>
+  </tr>
+  <tr *ngFor="let item of items | async">
+    <td>{{item.terminalCode}}</td>
+    <td>{{item.date}}</td>
+    <td>{{item.description}}</td>
+    <td>{{item.nroInvoice}}</td>
+    <td>{{item.saleCode}}</td>
+    <td>{{item.value}}</td>
+  </tr>
+</table>
